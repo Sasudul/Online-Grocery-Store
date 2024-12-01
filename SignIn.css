@@ -1,0 +1,177 @@
+/* Login Page  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Login__logo__container {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: #f1090a;
+  position: absolute;
+  border: none;
+}
+
+.Login__logo {
+  display: flex;
+  background: #f1090a;
+  width: 55%;
+  height: 45%;
+  margin: 200px;
+}
+
+.main {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+}
+#label1 {
+  position: absolute;
+  font-size: 58px;
+  color: #000000;
+  height: 60px;
+  width: 500px;
+  margin: 100px;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  background: #ffffff;
+  width: 700px;
+  height: 600px;
+  margin-left: 120px;
+  top: 210px;
+}
+
+#username {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+}
+
+#password {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin-top: 50px;
+  left: 12px;
+  top: 100px;
+}
+
+.input__username {
+  display: flex;
+  position: absolute;
+  margin: 5px;
+  padding: 20px;
+  height: 65px;
+  width: 500px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 50px;
+  left: 10px;
+}
+
+.input__password {
+  display: flex;
+  position: absolute;
+  margin: 5px;
+  padding: 20px;
+  height: 65px;
+  width: 500px;
+  background: #ebeaea;
+  border-radius: 20px;
+  border: #f4f4f4 1px;
+  font-size: 24px;
+  top: 190px;
+  left: 10px;
+}
+
+.checkbox__remember__me {
+  display: flex;
+  position: absolute;
+  margin: 10px;
+  width: 24px;
+  height: 22px;
+  border-color: #000 8px solid;
+  color: #ebeaea;
+  top: 270px;
+  left: 30px;
+}
+
+#Remember__me {
+  display: flex;
+  position: absolute;
+  color: #686767fa;
+  top: 278px;
+  left: 80px;
+  font-size: 22px;
+}
+
+.login {
+  display: flex;
+  position: absolute;
+  background: #f1090a;
+  color: white;
+  height: 65px;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 33px;
+  cursor: pointer;
+  border-radius: 40px;
+  border-color: transparent;
+  margin-top: 5px auto;
+  top: 380px;
+  left: 5%;
+}
+
+.login a {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+}
+
+#forgot__password {
+  color: #f1090a;
+  position: absolute;
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  top: 445px;
+  left: 5%;
+}
+
+#label2 {
+  display: block;
+  position: absolute;
+  color: #000000;
+  font-size: 26px;
+  left: 16%;
+  top: 550px;
+  margin-top: 10px;
+}
+
+#sign__up {
+  color: #f1090a;
+  position: absolute;
+  text-decoration: none;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  left: 55%;
+  top: 550px;
+}

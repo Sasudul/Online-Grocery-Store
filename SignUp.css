@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo__container {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: #f1090a;
+  position: absolute;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  background: #f1090a;
+  width: 55%;
+  height: 45%;
+  margin: 200px;
+  top: 5%;
+}
+.main {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+}
+
+#label1 {
+  position: absolute;
+  font-size: 58px;
+  color: #000000;
+  height: 60px;
+  width: 500px;
+  margin: 100px;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  background: #ffffff;
+  width: 800px;
+  height: 700px;
+  margin-left: 120px;
+  top: 210px;
+}
+
+#label2 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.input__fname {
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  height: 65px;
+  width: 350px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 50px;
+  left: 10px;
+}
+
+#label3 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+  left: 50%;
+}
+
+.input__lname {
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  height: 65px;
+  width: 350px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 50px;
+  left: 52%;
+}
+
+#label4 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+  top: 150px;
+}
+.input__phone {
+  display: flex;
+  position: absolute;
+  margin: 5px;
+  padding: 20px;
+  height: 65px;
+  width: 600px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 195px;
+  left: 10px;
+}
+
+#label5 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+  top: 280px;
+}
+
+.input__address {
+  display: flex;
+  position: absolute;
+  margin: 5px;
+  padding: 20px;
+  height: 65px;
+  width: 600px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 330px;
+  left: 10px;
+}
+
+#label6 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  font-size: 30px;
+  margin: 10px;
+  top: 415px;
+}
+.input__Email {
+  display: flex;
+  position: absolute;
+  margin: 5px;
+  padding: 20px;
+  height: 65px;
+  width: 600px;
+  border-radius: 22px;
+  background: #ebeaea;
+  border: #d9d9d9 1px;
+  font-size: 24px;
+  top: 465px;
+  left: 10px;
+}
+
+.Conformation__Email {
+  display: flex;
+  position: absolute;
+  margin: 10px;
+  width: 24px;
+  height: 22px;
+  border-color: #000 8px solid;
+  color: #ebeaea;
+  top: 540px;
+  left: 40px;
+  shape-outside: #000000;
+}
+
+#conformation__Email {
+  display: flex;
+  position: absolute;
+  color: #202020fa;
+  top: 540px;
+  left: 90px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.Signup {
+  display: flex;
+  position: absolute;
+  background: #f1090a;
+  color: white;
+  height: 65px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 33px;
+  cursor: pointer;
+  border-radius: 40px;
+  border-color: transparent;
+  margin-top: 5px auto;
+  top: 88%;
+  left: 20%;
+}
+
+.Signup a {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+}

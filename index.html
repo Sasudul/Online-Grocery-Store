@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nato Mini Mart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Beverages.png" alt="Beverages" />Beverages</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Sweets.png" alt="Sweets and Snacks" />Sweets
+              and Snacks</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Meat.png" alt="Meats and Frozen" />Meat and
+              Frozen</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Grocery.png" alt="Grocery" />Grocery</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Bakery.png" alt="Bakery" />Bakery</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Diary.png" alt="Diary" />Dairy Products</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img
+                src="Category/Stationary.png"
+                alt="Stationary"
+              />Stationary</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Health.png" alt="Health & Beauty" />Health and
+              Beauty</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Baby.png" alt="Baby Care" />Baby Care</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Cleaning.png" alt="Cleaning" />Cleaning</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Gifts.png" alt="Gifts" />Gifts</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Party.png" alt="Party Decorations" />Party
+              Decorations</a
+            >
+          </li>
+        </ul>
+
+        <a href="index.html " class="nav_logo">
+          <img
+            src="images/NatoLogo.png"
+            class="navbar__logo"
+            alt="Nato Mini Mart"
+        /></a>
+
+        <div class="Search__bar">
+          <img src="search.png" alt="" />
+          <input
+            type="text"
+            class="input"
+            placeholder="Search for a Product .........."
+          />
+          <button class="Search__btn" type="button">Search</button>
+        </div>
+
+        <div class="navbar__btn_Wishlist">
+          <a href="/" class="nav__button"
+            ><img src="images/Wishlist.png" alt="Wishlist"
+          /></a>
+        </div>
+
+        <button id="navbar__btn_cart" onclick="cart()">
+          <img src="images/Cart.png" alt="Cart" />
+          <span class="Qty">3</span>
+        </button>
+
+        <div id="cart">
+          <div class="header">
+            <label id="Your_cart">Your Cart</label>
+            <button class="close-button" onclick="closeCart()">X</button>
+          </div>
+          <div class="content">
+            <div class="cart-item">
+              <img src="DailyDeals/Oreo.png" alt="Item 1" />
+              <div class="cart-item-details">
+                <p>Grenade Oreo White Bar 60g</p>
+                <p>Price: Rs. 1,462.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,462.50</p>
+            </div>
+
+            <div class="cart-item">
+              <img src="DailyDeals/kitkat.png" alt="Item 2" />
+              <div class="cart-item-details">
+                <p>Hersheys Cookies N Chocolate Ice Stick</p>
+                <p>Price: Rs. 1,850.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span> 1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,850.00</p>
+            </div>
+
+            <div class="cart-item">
+              <img src="New Arrivals/Ramen.png" alt="Item 2" />
+              <div class="cart-item-details">
+                <p>Hersheys Cookies N Chocolate Ice Stick</p>
+                <p>Price: Rs.1,850.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,850.00</p>
+            </div>
+          </div>
+          <div class="form">
+            <label id="prom">Have a Promo Code?</label>
+            <br />
+            <input
+              id="promo__code"
+              type="text"
+              placeholder="Enter promo code"
+            />
+            <hr />
+            <p>To find out your shipping cost , Please proceed to checkout.</p>
+            <label id="amount"> Total: Rs. 3,312.00</label>
+          </div>
+          <div class="footer">
+            <button class="add_items">Add Items</button>
+            <button class="checkout">Checkout</button>
+          </div>
+        </div>
+
+        <div class="navbar__btn_SignIn">
+          <a href="SignIn.html" class="nav__button"
+            ><img src="images/Account.png" alt="Account"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="promotion">
+        <img id="Banners" src="promotions/p1.webp" alt="Promotional Banners" />
+        <button class="Arrow__right">
+          <img src="right.png" alt="" />
+        </button>
+        <button class="Arrow__left">
+          <img src="left.png" alt="" />
+        </button>
+      </div>
+
+      <div class="Category__container">
+        <button class="Beverages">
+          <img id="Beverages" src="Category/Beverages.png" alt="Beverages" />
+          <label for="Beverages" id="bv">Beverages</label>
+        </button>
+
+        <button class="Sweets">
+          <img
+            id="Sweets"
+            src="Category/Sweets.png"
+            alt="Sweets and Snacks"
+          /><label for="Sweets" id="ss">Sweets and Snacks</label>
+        </button>
+        <button class="Meat">
+          <img id="Meat" src="Category/Meat.png" alt="Meats and Frozen" /><label
+            for="Meat"
+            id="mm"
+            >Meats and Frozen</label
+          >
+        </button>
+        <button class="Grocery">
+          <img id="Grocery" src="Category/Grocery.png" alt="Grocery" /><label
+            for="Grocery"
+            id="gy"
+            >Grocery</label
+          >
+        </button>
+        <button class="Bakery">
+          <img id="Bakery" src="Category/Bakery.png" alt="Bakery" /><label
+            for="Bakery"
+            id="bk"
+            >Bakery</label
+          >
+        </button>
+        <button class="Diary">
+          <img id="Diary" src="Category/Diary.png" alt="Diary" /><label
+            for="Dairy"
+            id="dy"
+            >Dairy</label
+          >
+        </button>
+
+        <button class="Stationary">
+          <img
+            id="Stationary"
+            src="Category/Stationary.png"
+            alt="Stationary"
+          /><label for="Stationary" id="st">Stationary</label>
+        </button>
+        <button class="Health">
+          <img
+            id="Health"
+            src="Category/Health.png"
+            alt="Health & Beauty"
+          /><label for="Health" id="ht">Health</label>
+        </button>
+        <button class="Baby">
+          <img id="Baby" src="Category/Baby.png" alt="Baby Care" /><label
+            for="Baby"
+            id="bc"
+            >Baby Care</label
+          >
+        </button>
+        <button class="Cleaning">
+          <img id="Cleaning" src="Category/Cleaning.png" alt="Cleaning" /><label
+            for="Cleaning"
+            id="cl"
+            >Cleaning</label
+          >
+        </button>
+        <button class="Gifts">
+          <img id="Gifts" src="Category/Gifts.png" alt="Gifts" /><label
+            for="Gifts"
+            id="gf"
+            >Gifts</label
+          >
+        </button>
+        <button class="Party">
+          <img
+            id="Party"
+            src="Category/Party.png"
+            alt="Party Decorations"
+          /><label for="Party" id="pd">Party Decorations</label>
+        </button>
+      </div>
+      <div class="DailyDeals">
+        <label for="DailyDeals" id="DailyDeals">Daily Deals</label>
+      </div>
+      <div class="First__Product__Container">
+        <div class="Product">
+          <button class="F1">
+            <img
+              id="F1"
+              src="DailyDeals/Nelna.png"
+              alt="Nelna Skinless Chicken"
+            />
+            <button class="add">
+              <img id="add" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="First__Product" id="Product_Name"
+            >Nelna Skinless Chicken 1kg</label
+          >
+          <label for="First__Product" id="New_Price">Rs .1080.00</label>
+          <label for="First__Product" id="Old_Price">Rs .1200.00</label>
+          <label for="First__Product" id="Discount">10% off</label>
+        </div>
+
+        <div class="Product">
+          <button class="F1">
+            <img
+              id="F1"
+              src="DailyDeals/NelnaSausage.png"
+              alt="Nelna Chicken Sausage"
+            />
+            <button class="add">
+              <img id="add" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="First__Product" id="Product_Name"
+            >Nelna Chicken Sausages 1kg</label
+          >
+          <label for="First__Product" id="New_Price">Rs .1600.00</label>
+          <label for="First__Product" id="Old_Price">Rs .1760.00</label>
+          <label for="First__Product" id="Discount">10% off</label>
+        </div>
+
+        <div class="Product">
+          <button class="F1">
+            <img
+              id="F1"
+              src="DailyDeals/Oreo.png"
+              alt="Nelna Skinless Chicken"
+            />
+            <button class="add">
+              <img id="add" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="First__Product" id="Product_Name"
+            >Casbury Diary Milk Oreo 120g</label
+          >
+          <label for="First__Product" id="New_Price">Rs .990.00</label>
+          <label for="First__Product" id="Old_Price">Rs .1100.00</label>
+          <label for="First__Product" id="Discount">10% off</label>
+        </div>
+
+        <div class="Product">
+          <button class="F1">
+            <img
+              id="F1"
+              src="DailyDeals/kitkat.png"
+              alt="Nelna Skinless Chicken"
+            />
+            <button class="add">
+              <img id="add" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="First__Product" id="Product_Name"
+            >Nestle KitKat Dark 200g</label
+          >
+          <label for="First__Product" id="New_Price">Rs .450.00</label>
+          <label for="First__Product" id="Old_Price">Rs .500.00</label>
+          <label for="First__Product" id="Discount">10% off</label>
+        </div>
+
+        <div class="Product">
+          <button class="F1">
+            <img
+              id="F1"
+              src="DailyDeals/Oreo.png"
+              alt="Nelna Skinless Chicken"
+            />
+            <button class="add">
+              <img id="add" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="First__Product" id="Product_Name"
+            >Casbury Diary Milk Oreo 120g</label
+          >
+          <label for="First__Product" id="New_Price">Rs .990.00</label>
+          <label for="First__Product" id="Old_Price">Rs .1100.00</label>
+          <label for="First__Product" id="Discount">10% off</label>
+        </div>
+      </div>
+      <div class="promotion2">
+        <img id="Banners2" src="promotions/p4.jpg" alt="Promotional Banners" />
+      </div>
+      <div class="New__Arrivals">
+        <label for="New__Arrivals" id="New__Arrivals">New Arrivals</label>
+      </div>
+      <div class="Second_products">
+        <div class="Second_product">
+          <button class="F2">
+            <img
+              id="F2"
+              src="New Arrivals/Buns.png"
+              alt="buns"
+            />
+            <button class="add2">
+              <img id="add2" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="Second_product" id="Second_Product_Name"
+            >Prima Sunrise
+  Burger buns 
+       100g
+      
+      </label
+          >
+          <label for="Second_product" id="price">Rs. 300.00</label>
+        </div>
+
+              <div class="Second_product">
+          <button class="F2">
+            <img
+              id="F2"
+              src="New Arrivals/Hotdog.png"
+              alt="buns"
+            />
+            <button class="add2">
+              <img id="add2" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="Second_product" id="Second_Product_Name"
+            >Prima Sunrise
+  Hot dog buns 
+       100g
+      </label
+          >
+          <label for="Second_product" id="price">Rs. 250.00</label>
+        </div>
+
+                <div class="Second_product">
+          <button class="F2">
+            <img
+              id="F2"
+              src="New Arrivals/Toblerone.png"
+              alt="buns"
+            />
+            <button class="add2">
+              <img id="add2" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="Second_product" id="Second_Product_Name"
+            >Toblerone <br/>
+    400g</label
+          >
+          <label for="Second_product" id="price">Rs. 990.00</label>
+        </div>
+
+                <div class="Second_product">
+          <button class="F2">
+            <img
+              id="F2"
+              src="New Arrivals/Ramen.png"
+              alt="buns"
+            />
+            <button class="add2">
+              <img id="add2" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="Second_product" id="Second_Product_Name"
+            >Buldak Ramen
+instant <br>noodles 
+       
+      </label
+          >
+          <label for="Second_product" id="price">Rs. 450.00</label>
+        </div>
+
+                <div class="Second_product">
+          <button class="F2">
+            <img
+              id="F2"
+              src="New Arrivals/perfume.png"
+              alt="buns"
+            />
+            <button class="add2">
+              <img id="add2" src="plus.png" alt="add" />
+            </button>
+          </button>
+          <label for="Second_product" id="Second_Product_Name"
+            >Khaleej perfume
+           set<br/>
+         100ml
+      </label
+          >
+          <label for="Second_product" id="price">Rs. 2500.00</label>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="footer">
+        <img
+          class="footer__logo"
+          src="images/NatoLogo.png"
+          alt="Nato Mini Mart"
+        />
+
+        <div class="Contact__us">
+          <label for="Contact__us" id="contact"><br />Contact Us</label>
+          <a href="/" id="phone"><br /><img src="" alt="" />+94 78 731 2453</a>
+          <a href="/" id="address"
+            ><img src="" alt="" />No.610/C1.Galle road,<br />Wadduwa</a
+          >
+        </div>
+
+        <div class="Information">
+          <label for="Information" id="information"><br />Information</label>
+          <a href="/" id="about">about us</a>
+          <a href="/" id="return">Return and Refund</a>
+          <a href="/" id="privacy">Privacy policy</a>
+        </div>
+
+        <div class="Customer_Care">
+          <label for="Customer_Care" id="cus__care"><br />Customer Care</label>
+          <a href="/Profile.html" id="account">My account</a>
+          <a href="/" id="orders"> Previous Orders</a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nato Mini Mart</title>
+    <link rel="stylesheet" href="Profile.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Beverages.png" alt="Beverages" />Beverages</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Sweets.png" alt="Sweets and Snacks" />Sweets
+              and Snacks</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Meat.png" alt="Meats and Frozen" />Meat and
+              Frozen</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Grocery.png" alt="Grocery" />Grocery</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Bakery.png" alt="Bakery" />Bakery</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Diary.png" alt="Diary" />Dairy Products</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img
+                src="Category/Stationary.png"
+                alt="Stationary"
+              />Stationary</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Health.png" alt="Health & Beauty" />Health and
+              Beauty</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Baby.png" alt="Baby Care" />Baby Care</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Cleaning.png" alt="Cleaning" />Cleaning</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Gifts.png" alt="Gifts" />Gifts</a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"
+              ><img src="Category/Party.png" alt="Party Decorations" />Party
+              Decorations</a
+            >
+          </li>
+        </ul>
+
+        <a href="index.html " class="nav_logo">
+          <img
+            src="images/NatoLogo.png"
+            class="navbar__logo"
+            alt="Nato Mini Mart"
+        /></a>
+
+        <div class="Search__bar">
+          <img src="search.png" alt="" />
+          <input
+            type="text"
+            class="input"
+            placeholder="Search for a Product .........."
+          />
+          <button class="Search__btn" type="button">Search</button>
+        </div>
+
+        <div class="navbar__btn_Wishlist">
+          <a href="/" class="nav__button"
+            ><img src="images/Wishlist.png" alt="Wishlist"
+          /></a>
+        </div>
+
+        <button id="navbar__btn_cart" onclick="cart()">
+          <img src="images/Cart.png" alt="Cart" />
+          <span class="Qty">3</span>
+        </button>
+
+        <div id="cart">
+          <div class="header">
+            <label id="Your_cart">Your Cart</label>
+            <button class="close-button" onclick="closeCart()">X</button>
+          </div>
+          <div class="content">
+            <div class="cart-item">
+              <img src="DailyDeals/Oreo.png" alt="Item 1" />
+              <div class="cart-item-details">
+                <p>Grenade Oreo White Bar 60g</p>
+                <p>Price: Rs. 1,462.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,462.50</p>
+            </div>
+
+            <div class="cart-item">
+              <img src="DailyDeals/kitkat.png" alt="Item 2" />
+              <div class="cart-item-details">
+                <p>Hersheys Cookies N Chocolate Ice Stick</p>
+                <p>Price: Rs. 1,850.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span> 1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,850.00</p>
+            </div>
+
+            <div class="cart-item">
+              <img src="New Arrivals/Ramen.png" alt="Item 2" />
+              <div class="cart-item-details">
+                <p>Hersheys Cookies N Chocolate Ice Stick</p>
+                <p>Price: Rs.1,850.00</p>
+                <div class="quantity-controls">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+              <p>Rs.1,850.00</p>
+            </div>
+          </div>
+          <div class="form">
+            <label id="prom">Have a Promo Code?</label>
+            <br />
+            <input
+              id="promo__code"
+              type="text"
+              placeholder="Enter promo code"
+            />
+            <hr />
+            <p>To find out your shipping cost , Please proceed to checkout.</p>
+            <label id="amount"> Total: Rs. 3,312.00</label>
+          </div>
+          <div class="footer">
+            <button class="add_items">Add Items</button>
+            <button class="checkout">Checkout</button>
+          </div>
+        </div>
+
+        <div class="navbar__btn_SignIn">
+          <a href="SignIn.html" class="nav__button"
+            ><img src="images/Account.png" alt="Account"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="profile__header">
+        <label for="profile__header" id="myaccount">My Account</label>
+        <a href="/" class="default">Default Address</a>
+        <label for="profile__header" id="address"
+          >239/C1 TC Road , Kotikawatta , Colombo District</label
+        >
+      </div>
+
+      <div class="profile">
+        <button class="profile__pic">
+          <img src="profile.png" alt="profile pic" id="pic" />
+        </button>
+        <button class="change__image">Click to Change Image</button>
+        <label for="profile" id="name">Sasan Kumara</label>
+        <label for="profile" id="Email"
+          >Email ID: sasankumara42@gmail.com</label
+        >
+        <label for="profile" id="number"> Mobile No: 074 062 9020</label>
+      </div>
+
+      <form class="profile__bottom">
+        <div class="form-group-firstName">
+          <label for="firstName">First Name</label>
+          <br />
+          <input type="text" id="firstName" placeholder="Sasan" />
+        </div>
+        <div class="form-group-lastName">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Kumara" />
+        </div>
+        <div class="form-group-dob">
+          <label for="dob">Date Of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="form-group-gender">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="" disabled selected>Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Transgender</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group-number">
+          <label for="contactNumber">Contact Number</label>
+          <input type="tel" id="contactNumber" placeholder="0740629020" />
+        </div>
+        <div class="form-group-address">
+          <label for="cus_address">Address</label>
+          <input
+            type="text"
+            id="cus_address"
+            placeholder="239/C1 TC Road , Kotikawatta , Colombo"
+          />
+        </div>
+        <button class="save-button">Save</button>
+      </form>
+    </main>
+    <div class="footer">
+      <img
+        class="footer__logo"
+        src="images/NatoLogo.png"
+        alt="Nato Mini Mart"
+      />
+      <div class="Contact__us">
+        <label for="Contact__us" id="contact"><br />Contact Us</label>
+        <a href="/" id="phone"><br /><img src="" alt="" />+94 78 731 2453</a>
+        <a href="/" id="address"
+          ><img src="" alt="" />No.610/C1.Galle road,<br />Wadduwa</a
+        >
+      </div>
+
+      <div class="Information">
+        <label for="Information" id="information"><br />Information</label>
+        <a href="/" id="about">about us</a>
+        <a href="/" id="return">Return and Refund</a>
+        <a href="/" id="privacy">Privacy policy</a>
+      </div>
+
+      <div class="Customer_Care">
+        <label for="Customer_Care" id="cus__care"><br />Customer Care</label>
+        <a href="/Profile.html" id="account">My account</a>
+        <a href="/" id="orders"> Previous Orders</a>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
